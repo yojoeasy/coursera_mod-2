@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* div:nth-child(1){
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 0;
+} */
+.main>h1:nth-child(1){
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 0;
+}
+.container{
+    display: flex;
+}
+.class{
+    width: 30%;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+.class>h1{
+    padding: 10px;
+    margin-left: 60%;
+    display:flex;
+    justify-content: end;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.chicken{
+    color: black;
+    background-color: pink;
+}
+.meat{
+    color:white;
+    background-color: red;
+}
+.sushi{
+    color:black;
+    background-color:yellow;
+}
+.class>p{
+    padding: 10px;
+}
+
+@media screen and (max-width:767px){.class{
+    width: 100%;
+    margin: 20px 20px;
+    border: 1px solid black;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .class{
+    width: 45%;
+    margin: 20px 10px;
+    border: 1px solid black;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
